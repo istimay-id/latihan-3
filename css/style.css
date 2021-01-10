@@ -1,0 +1,178 @@
+/*
+ * General/Utility Styles
+*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+body {
+  padding: 5rem 0 5rem 0;
+  background: url(../images/kids-background.jpg);
+  background-size: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a {
+  font-weight: bold;
+  color: rgb(255, 89, 95);
+  text-decoration: none;
+}
+
+
+/*
+ * H1 and H2 Styles
+*/
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+h2, p, time, address {
+  text-align: left;
+}
+/*
+ * Header styles
+*/
+header {
+  background-color: orange;
+  text-align: center;
+  color: #222222;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 20px 20px 0 0;
+}
+
+/*
+ * Container AND Section Styles
+*/
+
+.container {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  width: 648px;
+}
+
+.container section:nth-child(odd) {
+  background-color: white;
+}
+
+.container section:nth-child(even) {
+  background-color: silver;
+}
+
+.description, .time-and-place {
+  text-align: center;
+  padding: 40px;
+}
+
+.inline {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-right: 0;
+  margin-left: 95px;
+  margin-bottom: 40px;
+}
+
+footer {
+  margin-top: 10px;
+}
+/*
+ * IMG Styles
+*/
+
+.pancake img {
+  width: 100%;
+}
+
+.description img, .time-and-place img {
+  width: 20%;
+  margin: 20px;
+  float: left;
+}
+
+.time-and-place img{
+  float: left;
+  margin: 0;
+}
+
+/*
+ * Other Details Styles
+*/
+
+.time-and-place h2 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+
+
+@media only screen and (max-width: 648px) {
+
+body {
+  background: none;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+h2, p, address {
+  text-align: center;
+  display: block;
+  clear: both;
+}
+
+.inline {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.description img, .time-and-place img {
+  float: none;
+  text-align: center;
+}
+
+.description img {
+  margin-bottom: 40px;
+}
+
+.time-and-place img {
+  margin-top: 40px;
+}
+
+header, iframe {
+  border-radius: 0;
+}
+footer {
+  margin-bottom: 10px;
+}
+
+}
